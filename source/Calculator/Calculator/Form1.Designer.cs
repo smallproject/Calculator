@@ -62,6 +62,7 @@
             this.btn3.TabIndex = 0;
             this.btn3.Text = "btn3";
             this.btn3.UseVisualStyleBackColor = true;
+            this.btn3.Click += new System.EventHandler(this.btn3_Click);
             // 
             // btn2
             // 
@@ -71,6 +72,7 @@
             this.btn2.TabIndex = 1;
             this.btn2.Text = "btn2";
             this.btn2.UseVisualStyleBackColor = true;
+            this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
             // btn1
             // 
@@ -80,6 +82,7 @@
             this.btn1.TabIndex = 2;
             this.btn1.Text = "btn1";
             this.btn1.UseVisualStyleBackColor = true;
+            this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
             // btn4
             // 
@@ -89,6 +92,7 @@
             this.btn4.TabIndex = 5;
             this.btn4.Text = "btn4";
             this.btn4.UseVisualStyleBackColor = true;
+            this.btn4.Click += new System.EventHandler(this.btn4_Click);
             // 
             // btn5
             // 
@@ -98,6 +102,7 @@
             this.btn5.TabIndex = 4;
             this.btn5.Text = "btn5";
             this.btn5.UseVisualStyleBackColor = true;
+            this.btn5.Click += new System.EventHandler(this.btn5_Click);
             // 
             // btn6
             // 
@@ -107,6 +112,7 @@
             this.btn6.TabIndex = 3;
             this.btn6.Text = "btn6";
             this.btn6.UseVisualStyleBackColor = true;
+            this.btn6.Click += new System.EventHandler(this.btn6_Click);
             // 
             // btn7
             // 
@@ -116,6 +122,7 @@
             this.btn7.TabIndex = 8;
             this.btn7.Text = "btn7";
             this.btn7.UseVisualStyleBackColor = true;
+            this.btn7.Click += new System.EventHandler(this.btn7_Click);
             // 
             // btn8
             // 
@@ -125,6 +132,7 @@
             this.btn8.TabIndex = 7;
             this.btn8.Text = "btn8";
             this.btn8.UseVisualStyleBackColor = true;
+            this.btn8.Click += new System.EventHandler(this.btn8_Click);
             // 
             // btn9
             // 
@@ -134,6 +142,7 @@
             this.btn9.TabIndex = 6;
             this.btn9.Text = "btn9";
             this.btn9.UseVisualStyleBackColor = true;
+            this.btn9.Click += new System.EventHandler(this.btn9_Click);
             // 
             // btnbckspace
             // 
@@ -161,6 +170,7 @@
             this.btnc.TabIndex = 9;
             this.btnc.Text = "btnc";
             this.btnc.UseVisualStyleBackColor = true;
+            this.btnc.Click += new System.EventHandler(this.btnc_Click);
             // 
             // btn0
             // 
@@ -170,6 +180,7 @@
             this.btn0.TabIndex = 14;
             this.btn0.Text = "btn0";
             this.btn0.UseVisualStyleBackColor = true;
+            this.btn0.Click += new System.EventHandler(this.btn0_Click);
             // 
             // btndot
             // 
@@ -179,6 +190,7 @@
             this.btndot.TabIndex = 12;
             this.btndot.Text = "btndot";
             this.btndot.UseVisualStyleBackColor = true;
+            this.btndot.Click += new System.EventHandler(this.btndot_Click);
             // 
             // btnsign
             // 
@@ -263,14 +275,14 @@
             // 
             // txtbinput
             // 
-            this.txtbinput.AcceptsReturn = true;
-            this.txtbinput.AcceptsTab = true;
+            this.txtbinput.Enabled = false;
             this.txtbinput.Font = new System.Drawing.Font("Consolas", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbinput.Location = new System.Drawing.Point(12, 12);
             this.txtbinput.Multiline = true;
             this.txtbinput.Name = "txtbinput";
             this.txtbinput.ReadOnly = true;
             this.txtbinput.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtbinput.ShortcutsEnabled = false;
             this.txtbinput.Size = new System.Drawing.Size(324, 87);
             this.txtbinput.TabIndex = 26;
             this.txtbinput.TabStop = false;
@@ -307,7 +319,7 @@
             this.Controls.Add(this.btn2);
             this.Controls.Add(this.btn3);
             this.Font = new System.Drawing.Font("Consolas", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.Name = "formmain";
             this.Text = "formmain";

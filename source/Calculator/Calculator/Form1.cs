@@ -51,5 +51,77 @@ namespace Calculator
             btnpercent.Text = "%";
             btndot.Text = ".";
         }
+
+        public void onglobal_buttonclick(string input)
+        {
+            if (txtbinput.Text.Equals("0"))
+            {
+                txtbinput.Text = input;
+            }
+            else
+            {
+                txtbinput.Text += input;
+            }
+        }
+
+        private void btn0_Click(object sender, EventArgs e)
+        {
+            onglobal_buttonclick("0");
+        }
+
+        private void btndot_Click(object sender, EventArgs e)
+        {
+            onglobal_buttonclick(".");
+        }
+
+        private void btn1_Click(object sender, EventArgs e)
+        {
+            onglobal_buttonclick("1");
+        }
+
+        private void btn2_Click(object sender, EventArgs e)
+        {
+            onglobal_buttonclick("2");
+        }
+
+        private void btn3_Click(object sender, EventArgs e)
+        {
+            onglobal_buttonclick("3");
+        }
+
+        private void btn4_Click(object sender, EventArgs e)
+        {
+            onglobal_buttonclick("4");
+        }
+
+        private void btn5_Click(object sender, EventArgs e)
+        {
+            onglobal_buttonclick("5");
+        }
+
+        private void btn6_Click(object sender, EventArgs e)
+        {
+            onglobal_buttonclick("6");
+        }
+
+        private void btn7_Click(object sender, EventArgs e)
+        {
+            onglobal_buttonclick("7");
+        }
+
+        private void btn8_Click(object sender, EventArgs e)
+        {
+            onglobal_buttonclick("8");
+        }
+
+        private void btn9_Click(object sender, EventArgs e)
+        {
+            onglobal_buttonclick("9");
+        }
+
+        private void btnc_Click(object sender, EventArgs e)
+        {
+            txtbinput.Text = "0";
+        }
     }
 }
