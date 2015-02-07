@@ -52,6 +52,8 @@
             this.btnequal = new System.Windows.Forms.Button();
             this.btnplus = new System.Windows.Forms.Button();
             this.txtbinput = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn3
@@ -200,6 +202,7 @@
             this.btnsign.TabIndex = 23;
             this.btnsign.Text = "btnsign";
             this.btnsign.UseVisualStyleBackColor = true;
+            this.btnsign.Click += new System.EventHandler(this.btnsign_Click);
             // 
             // btnsqrroot
             // 
@@ -275,26 +278,36 @@
             // 
             // txtbinput
             // 
+            this.txtbinput.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtbinput.Enabled = false;
             this.txtbinput.Font = new System.Drawing.Font("Consolas", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbinput.Location = new System.Drawing.Point(12, 12);
-            this.txtbinput.Multiline = true;
+            this.txtbinput.Location = new System.Drawing.Point(3, 44);
             this.txtbinput.Name = "txtbinput";
             this.txtbinput.ReadOnly = true;
             this.txtbinput.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtbinput.ShortcutsEnabled = false;
-            this.txtbinput.Size = new System.Drawing.Size(324, 87);
+            this.txtbinput.Size = new System.Drawing.Size(318, 32);
             this.txtbinput.TabIndex = 26;
             this.txtbinput.TabStop = false;
             this.txtbinput.Text = "txtbinput";
             this.txtbinput.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtbinput.TextChanged += new System.EventHandler(this.txtbinput_TextChanged);
+            // 
+            // panel1
+            // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.txtbinput);
+            this.panel1.Location = new System.Drawing.Point(12, 20);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(324, 79);
+            this.panel1.TabIndex = 27;
             // 
             // formmain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(348, 378);
-            this.Controls.Add(this.txtbinput);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnplus);
             this.Controls.Add(this.btnsign);
             this.Controls.Add(this.btnsqrroot);
@@ -323,8 +336,10 @@
             this.MaximizeBox = false;
             this.Name = "formmain";
             this.Text = "formmain";
+            this.Load += new System.EventHandler(this.formmain_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -354,6 +369,7 @@
         private System.Windows.Forms.Button btnequal;
         private System.Windows.Forms.Button btnplus;
         private System.Windows.Forms.TextBox txtbinput;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

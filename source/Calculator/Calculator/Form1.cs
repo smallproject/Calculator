@@ -123,5 +123,20 @@ namespace Calculator
         {
             txtbinput.Text = "0";
         }
+
+        private void btnsign_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtbinput_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void formmain_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
